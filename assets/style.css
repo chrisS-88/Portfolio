@@ -1,3 +1,14 @@
+:root {
+  /* colour palettes */
+  --darkBlue: rgb(33, 50, 94);
+  --blue: rgba(62, 73, 122, 0.359);
+  --yellow: rgb(241, 208, 10);
+  --white: rgb(240, 240, 240);
+  /* fontSize */
+  --sub-heading: 30px;
+  --nav: 20px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,8 +16,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
+  background-color: var(--blue);
 }
 
 h1,
@@ -20,4 +33,131 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* main logo / nav */
+
+header {
+  background-color: var(--darkBlue);
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.portfolio-head {
+  color: var(--yellow);
+}
+
+#nav-bar {
+  display: flex;
+  align-items: flex-end;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: var(--nav);
+  margin: 0.5em;
+  margin-left: 20px;
+}
+
+/* hero banner style */
+
+.hero-banner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin: 5em 0;
+}
+
+.hero-banner img {
+  border-radius: 50%;
+}
+
+.hero-banner h2 {
+  color: var(--darkBlue);
+  font-size: var(--sub-heading);
+  padding: 2em 1em;
+  border-left: 2px solid var(--darkBlue);
+}
+
+/* about section */
+
+#about {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+#about h2 {
+  color: var(--darkBlue);
+  padding-bottom: 0.5em;
+  font-size: var(--sub-heading);
+}
+
+/* portfolio grid section */
+
+#projects {
+  width: 75%;
+  margin: 6em auto;
+}
+
+#projects h2 {
+  font-size: var(--sub-heading);
+  color: var(--darkBlue);
+}
+
+#projectsGrid {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 150px 250px;
+  grid-template-areas:
+    "project1 project1"
+    "project2 project3"
+    "project4 project4";
+}
+
+.project-box {
+  margin: 1em;
+  background-color: var(--white);
+  border: 2px solid var(--darkBlue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-tag {
+  width: fit-content;
+  background-color: var(--blue);
+  border-bottom: 2px solid var(--darkBlue);
+  border-right: 2px solid var(--darkBlue);
+  border-bottom-right-radius: 10px;
+  padding: 0.2em;
+}
+
+.project-tag h3 {
+  font-size: var(--nav);
+  color: var(--yellow);
+}
+
+#project1 {
+  grid-area: project1;
+}
+
+#project2 {
+  grid-area: project2;
+}
+
+#project3 {
+  grid-area: project3;
+}
+
+#project4 {
+  grid-area: project4;
 }

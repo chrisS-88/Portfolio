@@ -4,35 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Lernantino // Web Developer</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>portfolio. Chris</title>
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
   <body>
     <!-- main logo / nav -->
     <header>
-      <h1>Chris Smart</h1>
-      <nav>
-        <a href="">about</a>
-        <a href="">projects</a>
-        <a href="">contact</a>
+      <div class="portfolio-head">
+        <h1>Portfolio.</h1>
+      </div>
+      <nav id="nav-bar">
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
       </nav>
     </header>
 
     <!-- hero banner -->
     <section class="hero-banner">
-      <div>
-        <h2>
-          You’re right. You are a freak…. Who would you rather be friends with:
-          Bowie or Kenny Rogers?!
-        </h2>
-      </div>
+      <img
+        id="profileImage"
+        src="assets/images/me.jpg"
+        alt="image of me"
+        width="300px"
+        height="300px"
+      />
+
+      <h2>Hi, I'm Chris. <br />Trainee Front End Web Developer.</h2>
     </section>
 
     <main class="page-wrapper">
       <!-- about me -->
-      <section class="page-section" id="about">
-        <h2>about Me</h2>
+      <section id="about">
+        <h2>About me</h2>
         <p>
           Um, I'm happy you're home. Don’t take it so personally, okay? I don’t
           like most people. He’s in the vast majority. Mistakes have been made.
@@ -49,19 +54,38 @@
 
       <!-- portfolio container -->
       <section class="page-section" id="projects">
-        <h2>projects</h2>
+        <h2>Projects</h2>
         <div id="projectsGrid">
-          <a href="">one</a>
-          <a href="">two</a>
-          <a href="">three</a>
-          <a href="">four</a>
-          <a href="">five</a>
+          <div class="project-box" id="project1">
+            <div class="project-tag">
+              <h3>Project 1</h3>
+              <p>Tools used</p>
+            </div>
+          </div>
+          <div class="project-box" id="project2">
+            <div class="project-tag">
+              <h3>Project 2</h3>
+              <p>Tools used</p>
+            </div>
+          </div>
+          <div class="project-box" id="project3">
+            <div class="project-tag">
+              <h3>Project 3</h3>
+              <p>Tools used</p>
+            </div>
+          </div>
+          <div class="project-box" id="project4">
+            <div class="project-tag">
+              <h3>Project 4</h3>
+              <p>Tools used</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- contact -->
-      <section class="page-section contact" id="contact">
-        <h2>contact</h2>
+      <section class="page-section" id="contact">
+        <h2>Contact</h2>
         <p>email</p>
         <p>github</p>
         <p>phone</p>
