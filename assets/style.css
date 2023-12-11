@@ -1,9 +1,10 @@
 :root {
   /* colour palettes */
   --darkBlue: rgb(33, 50, 94);
-  --blue: rgba(62, 73, 122, 0.359);
+  --blue: rgba(33, 50, 94, 0.396);
   --yellow: rgb(241, 208, 10);
   --white: rgb(240, 240, 240);
+  --text: rgb(31, 31, 31);
   /* fontSize */
   --sub-heading: 30px;
   --nav: 20px;
@@ -16,8 +17,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   background-color: var(--blue);
 }
@@ -33,6 +33,7 @@ h6 {
 
 p {
   margin: 0;
+  color: var(--text);
 }
 
 /* main logo / nav */
@@ -42,11 +43,13 @@ header {
   height: 30vh;
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1em 2em;
 }
 
 .portfolio-head {
   color: var(--yellow);
+  font-family: "Allison", cursive;
+  font-size: 30px;
 }
 
 #nav-bar {
@@ -62,6 +65,11 @@ nav a {
   margin-left: 20px;
 }
 
+nav a:hover {
+  cursor: pointer;
+  color: var(--yellow);
+}
+
 /* hero banner style */
 
 .hero-banner {
@@ -74,7 +82,7 @@ nav a {
 }
 
 .hero-banner img {
-  border-radius: 50%;
+  border-radius: 10px 50px 50px 10px;
 }
 
 .hero-banner h2 {
@@ -91,7 +99,8 @@ nav a {
   margin: 0 auto;
   padding: 1em;
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 10px 50px 50px 10px;
+  box-shadow: 5px 5px 10px var(--darkBlue);
 }
 
 #about h2 {
@@ -116,7 +125,7 @@ nav a {
   margin-top: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 250px 150px 250px;
+  grid-template-rows: 250px 250px 250px;
   grid-template-areas:
     "project1 project1"
     "project2 project3"
@@ -124,40 +133,97 @@ nav a {
 }
 
 .project-box {
+  text-decoration: none;
   margin: 1em;
   background-color: var(--white);
   border: 2px solid var(--darkBlue);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 10px var(--darkBlue);
+}
+
+.project-box:hover {
+  cursor: pointer;
+  filter: hue-rotate(180deg);
 }
 
 .project-tag {
   width: fit-content;
-  background-color: var(--blue);
-  border-bottom: 2px solid var(--darkBlue);
-  border-right: 2px solid var(--darkBlue);
-  border-bottom-right-radius: 10px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  margin: 0.5em;
   padding: 0.2em;
 }
 
 .project-tag h3 {
   font-size: var(--nav);
-  color: var(--yellow);
+  color: var(--darkBlue);
+}
+
+.project-tag p {
+  color: var(--text);
 }
 
 #project1 {
   grid-area: project1;
+  background-image: url(/assets/images/code.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #project2 {
   grid-area: project2;
+  background-image: url(/assets/images/books.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #project3 {
   grid-area: project3;
+  background-image: url(/assets/images/under-construction.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #project4 {
   grid-area: project4;
+  background-image: url(/assets/images/under-construction.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 30%;
+}
+
+/* contact section */
+
+#contact {
+  width: 75%;
+  margin: 0 auto;
+  border-top: 2px solid var(--darkBlue);
+}
+
+#contact h2 {
+  font-size: var(--sub-heading);
+  color: var(--darkBlue);
+  margin-top: 1em;
+}
+
+#get-in-touch {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3em;
+}
+
+#get-in-touch a {
+  font-size: var(--nav);
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--darkBlue);
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+#get-in-touch a:hover {
+  cursor: pointer;
+  color: var(--yellow);
 }

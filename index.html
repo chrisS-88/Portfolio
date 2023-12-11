@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>portfolio. Chris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allison&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
@@ -15,9 +23,9 @@
         <h1>Portfolio.</h1>
       </div>
       <nav id="nav-bar">
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -39,16 +47,11 @@
       <section id="about">
         <h2>About me</h2>
         <p>
-          Um, I'm happy you're home. Don’t take it so personally, okay? I don’t
-          like most people. He’s in the vast majority. Mistakes have been made.
-          Nancy, seriously, you're gonna be so cool now, it's ridiculous.
-          Friends don't lie. You’re going to take out the demigorgon with a
-          slingshot?She shut one door! With her mind! Friends don't lie. Hey
-          kiddo, would you like a balloon? Oh... candy, leftovers, Eggo's... she
-          really likes Eggo's. Bitchin' If anyone asks where I am, I've left the
-          country. Hey kiddo, would you like a balloon? You’re going to be home
-          by 8, listening to the Talking Heads and reading Vonnegut or
-          something. That sounds like a nice night.
+          Hello there! I'm Chris, a passionate trainee Front-end Web Developer
+          with an insatiable curiosity for crafting engaging digital
+          experiences. As someone deeply fascinated by the intersection of
+          design and technology, I've embarked on a journey to translate my
+          creativity into pixel-perfect websites.
         </p>
       </section>
 
@@ -56,39 +59,65 @@
       <section class="page-section" id="projects">
         <h2>Projects</h2>
         <div id="projectsGrid">
-          <div class="project-box" id="project1">
+          <a
+            href="https://chriss-88.github.io/Horiseon-refactor-challenge/"
+            target="_blank"
+            class="project-box"
+            id="project1"
+          >
             <div class="project-tag">
-              <h3>Project 1</h3>
-              <p>Tools used</p>
+              <h3>Refactored Webpage</h3>
+              <p>HTML/CSS</p>
             </div>
-          </div>
-          <div class="project-box" id="project2">
+          </a>
+          <a
+            href="https://chriss-88.github.io/Mini-Project_Landing-Page/"
+            target="_blank"
+            class="project-box"
+            id="project2"
+          >
             <div class="project-tag">
-              <h3>Project 2</h3>
-              <p>Tools used</p>
+              <h3>Landing Page</h3>
+              <p>HTML/CSS</p>
             </div>
-          </div>
-          <div class="project-box" id="project3">
+          </a>
+          <a href="" class="project-box" id="project3">
             <div class="project-tag">
               <h3>Project 3</h3>
               <p>Tools used</p>
             </div>
-          </div>
-          <div class="project-box" id="project4">
+          </a>
+          <a href="" class="project-box" id="project4">
             <div class="project-tag">
               <h3>Project 4</h3>
               <p>Tools used</p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
       <!-- contact -->
       <section class="page-section" id="contact">
         <h2>Contact</h2>
-        <p>email</p>
-        <p>github</p>
-        <p>phone</p>
+        <div id="get-in-touch">
+          <a href="mailto: chrissmart920@gmail.com">
+            <img
+              src="/assets/images/mail-icon.png"
+              width="20px"
+              alt="email icon"
+            />
+            Email</a
+          >
+          <a href="https://github.com/chrisS-88" target="_blank">
+            <img
+              src="/assets/images/github-icon.png"
+              width="20px"
+              height="20px"
+              alt="github icon"
+            />
+            Github</a
+          >
+        </div>
       </section>
     </main>
   </body>
