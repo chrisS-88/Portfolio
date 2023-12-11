@@ -5,6 +5,7 @@
   --yellow: rgb(241, 208, 10);
   --white: rgb(240, 240, 240);
   --text: rgb(31, 31, 31);
+
   /* fontSize */
   --sub-heading: 30px;
   --nav: 20px;
@@ -140,12 +141,12 @@ nav a:hover {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  box-shadow: 5px 5px 10px var(--darkBlue);
 }
 
 .project-box:hover {
   cursor: pointer;
   filter: hue-rotate(180deg);
+  box-shadow: 5px 5px 10px var(--darkBlue);
 }
 
 .project-tag {
@@ -226,4 +227,38 @@ nav a:hover {
 #get-in-touch a:hover {
   cursor: pointer;
   color: var(--yellow);
+}
+
+/* media query's */
+
+@media only screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+  .hero-banner {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-banner h2 {
+    border-left: none;
+    padding: 0.5em;
+    margin: 0 3em;
+  }
+
+  #about,
+  #projects {
+    width: 90%;
+  }
+
+  #projectsGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4";
+  }
 }
