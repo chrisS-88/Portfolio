@@ -173,28 +173,28 @@ nav a:hover {
 
 #project1 {
   grid-area: project1;
-  background-image: url(../assets/images/code.jpg);
+  background-image: url(images/code.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #project2 {
   grid-area: project2;
-  background-image: url(../assets/images/books.jpg);
+  background-image: url(images/books.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #project3 {
   grid-area: project3;
-  background-image: url(../assets/images/under-construction.jpg);
+  background-image: url(images/under-construction.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #project4 {
   grid-area: project4;
-  background-image: url(../assets/images/under-construction.jpg);
+  background-image: url(images/under-construction.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 30%;
