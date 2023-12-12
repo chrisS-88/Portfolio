@@ -12,6 +12,8 @@ The website features a homepage with a basic bio, how to contact me section and 
 
 ## Link to deployed website
 
+https://chriss-88.github.io/Portfolio/
+
 ## Screenshot of deployed websit
 
 ![Project screenshot](/assets/images/portfolio_screenshot.png)
